@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Julia Lau</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400,500&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> -->
-    <script src="app.js"></script>
-    <script src="jquery-3.4.1.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.0.0.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script> -->
 
 
 
@@ -17,38 +21,113 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="header-container">
         <header class="main-head">
-            <img class="main-head-img" src="header_image.JPG" alt="Julia">
+                
+            <!-- <img class="main-head-img" src="header_image.JPG" alt="Julia"> -->
                 <div class="header-top-text">Hi, I'm</div>
                 <div class="header-left-text">Julia</div>
                 <div class="header-right-text">Lau</div>
 
+                <!-- Nav Bar Icon when max-width: 700px -->
+                <!-- <div class="nav-responsive" id="top" >
+                    <a class="nav-icon" id="nav-open-btn" href="#nav"><i class="fa fa-bars">Book Navigation</i></a>
+                </div> -->
+
 
                 <!-- Nav Bar Container (Nested Grid) -->
-                <nav class="stroke">
-                    <div class="nav-about">
-                        <a href="#" class="navLinks">About</a>
-                    </div>
-                    <div class="nav-education">
-                        <a href="#" class="navLinks">Education</a>
-                    </div>
-                    <div class="nav-experience">
-                        <a href="#" class="navLinks">Experience</a>
-                    </div>
-                    <div class="nav-contact">
-                        <a href="#" class="navLinks">Contact</a>
-                    </div>
-                </nav>
+
+                    <nav class="stroke" id="nav">
+                        <!-- <div class="block"> -->
+                        <ul>
+                            <li><a href="#about" class="navLinks">About</a></li>
+                            <li><a href="#education" class="navLinks">Education</a></li>
+                            <li><a href="#experience" class="navLinks">Experience</a></li>
+                            <li><a href="#contact" class="navLinks">Contact</a></li>
+                            <li><a href="javascript:void(0);" onclick="openNav()" class="nav-icon"><i class="fa fa-bars"></i></a></li>
+                            
+                        </ul>
+                        <!-- <a href="#top" class="close-btn" id="nav-close-btn">&times;</a> -->
+                        <!-- </div> -->
+                    </nav>
+   
+
+
+
+                
 
         </header>
-        
+    </div>
+       
+    <div class="main-container">
         <!-- <div class="item1"></div> -->
-
-            <div class="about-title">
+    <div class="title-container">
+            <div class="about-title" id="about">
                 About Me
             </div>
-            <div class="item2">
+        </div>
+            <div class="description-container">
+            <div class="about-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Cras sollicitudin ex semper nunc vestibulum ullamcorper. 
+                Praesent laoreet in massa vitae scelerisque. Duis ullamcorper enim sed sagittis mollis. 
+                Integer eu augue augue. Vivamus blandit sit amet odio vel sollicitudin. Etiam eleifend 
+                elementum magna. Morbi vehicula sed felis quis semper. Aliquam in eros ac odio bibendum 
+                egestas ut quis mauris. Phasellus eget risus luctus, faucibus eros at, feugiat odio. 
+                Suspendisse potenti. Ut auctor, lectus nec sodales pretium, metus turpis pulvinar turpis, 
+                id lacinia dui est id neque. Pellentesque habitant morbi tristique senectus et netus et 
+            </div>
+        </div>
+        <div class="title-container">
+            <div class="education-title" id="education">
+                Education
+            </div>
+        </div>
+        <div class="educ-container">
+            <div class="section-container">
+            <!-- <div class="img-container"> -->
+                <img src="bruin logo.png" alt="ucla">
+                
+            <!-- </div> -->
+                <div class="desc-container">
+                    <h1>University of California, Los Angeles </h1>
+                    <h2>M.S. in Engineering with Specialization in Data Science - In Progress</h2>
+                    <h2>Blah Blah Blah</h2>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="educ-container">
+            <!-- <div class="img-container"> -->
+            <div class="section-container">
+                <img src="anteater logo.png" alt="uci">
+            <!-- </div> -->
+
+                <div class="desc-container">
+                    <h1>University of California, Irvine</h1>
+                    <h2>B.S. Computer Science - June, 2019</h2>
+                    <h2>Blah Blah Blah</h2>
+                </div>
+            </div>
+        </div>
+
+            <!-- <div class="bruin-desc-container">
+                <h1>University of California, Los Angeles </h1>
+                <h2>M.S. in Engineering with Specialization in Data Science - In Progress</h2>
+                <h2>Blah Blah Blah</h2>
+            </div> -->
+        <!-- </div> -->
+        <!-- <div class="anteater-container"> -->
+            
+            <!-- <div class="anteater-desc-container">
+                <h1>University of California, Irvine</h1>
+                <h2>B.S. Computer Science - June, 2019</h2>
+                <h2>Blah Blah Blah</h2>
+            </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+
+            <!-- <div class="item2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Cras sollicitudin ex semper nunc vestibulum ullamcorper. 
                     Praesent laoreet in massa vitae scelerisque. Duis ullamcorper enim sed sagittis mollis. 
@@ -59,16 +138,14 @@
                     id lacinia dui est id neque. Pellentesque habitant morbi tristique senectus et netus et 
                     malesuada fames ac turpis egestas. Integer id justo vel dui mattis tincidunt nec sed tellus. 
                     Morbi blandit imperdiet mattis. Duis feugiat efficitur leo a luctus.
-                <!-- <p>I am a full-time software engineer and part time student.</p> -->
-            
-            <!-- <p>Picture goes here</p> -->
+
         </div>
         <div class="education-title">
             Education
         </div>
-
+        
         <div class="item6">
-            <img class="item-img" src="ucla-bruin.jpg" alt="ucla">
+            <img class="item-img" src="bruin logo.png" alt="ucla">
         </div>
         <div class="item7">
             <h1>University of California, Los Angeles </h1>
@@ -77,13 +154,14 @@
         </div>
 
         <div class="item10">
-            <img class="item-img" src="uci-anteater.jpg" alt="uci">
+            <img class="item-img" src="anteater logo.png" alt="uci">
         </div>
         <div class="item11">
             <h1>University of California, Irvine</h1>
             <h2>B.S. Computer Science - June, 2019</h2>
             <h2>Blah Blah Blah</h2>
-        </div>
+        </div> -->
+    <!-- </div> -->
         <!-- <div class="item10">
             <p>item10</p>
         </div>
@@ -92,35 +170,11 @@
         </div> -->
 
     </div>
+<!-- </div> -->
+
     
 
-        <!-- <br> and CSS-Mask image</h1> -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
-
-<div class="header">
-<div class="sorta-block">
-    <div data-text="hi, i'm"class="sorta">hi, i'm</div> 
-  </div>
-
- <span data-text="Julia Lau" class="dashed-shadow name">Julia Lau</span>
-</div> -->
-<!-- <br/>
-<div data-text="This thing is" class="dashed-shadow">This thing is</div> <br />
-
-<div data-text="a hipster-ish" class="dashed-shadow hipsterish">a hipster-ish</div> <br />
-<div class="dashed-shadow dashed-shadow-text">DASHED<br /><span class="shadow">SHADOW</span></div> <br /> --> 
-    <!-- <h1>Task Timeline</h1>
-    <p id="date">
-        <ul>
-            <li class="list">Edit the head</li>
-            <li class="list">Edit the body</li>
-            <li>Link to JavaScript</li>
-        </ul>
-        <script src="app.js"></script>
-        <noscript>You need to enable JavaScript to view the full site.</noscript>
-    </p> -->
+    
 
 </body>
 </html>

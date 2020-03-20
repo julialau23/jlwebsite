@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Julia Lau</title>
     <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="contact.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> -->
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -20,194 +22,192 @@
 </head>
 
 <body>
-
-    <div class="header-container">
-        <header class="main-head">
-                
-            <!-- <img class="main-head-img" src="header_image.JPG" alt="Julia"> -->
-                <div class="header-top-text">Hi, I'm</div>
-                <div class="header-left-text">Julia</div>
-                <div class="header-right-text">Lau</div>
-
-                <!-- Nav Bar Icon when max-width: 700px -->
-                <!-- <div class="nav-responsive" id="top" >
-                    <a class="nav-icon" id="nav-open-btn" href="#nav"><i class="fa fa-bars">Book Navigation</i></a>
-                </div> -->
-
-
-                <!-- Nav Bar Container (Nested Grid) -->
-                <div class="nav-container">
-                    <nav class="stroke" id="nav">
-                        <!-- <div class="block"> -->
-                        <ul>
-                            <li><a href="#about" class="navLinks">About</a></li>
-                            <li><a href="#education" class="navLinks">Education</a></li>
-                            <li><a href="#experience" class="navLinks">Experience</a></li>
-                            <li><a href="#contact" class="navLinks">Contact</a></li>
-                            <li><a href="javascript:void(0);" onclick="openNav()" class="nav-icon"><i class="fa fa-bars"></i></a></li>
-                            
-                        </ul>
-                        <!-- <a href="#top" class="close-btn" id="nav-close-btn">&times;</a> -->
-                        <!-- </div> -->
-                    </nav>
+    <div class="preloader-wrapper" id="preloader-wrapper">
+        <div class="preloader">
+            <div class="text-center">
+                <div class="spinner-border" role="status">
+                    
+                    <span class="sr-only">Loading...</span>
                 </div>
-   
-
-
-
-                
-
-        </header>
+            </div>
+        </div>
     </div>
-       
-    <div class="main-container">
-        <!-- <div class="item1"></div> -->
-    <div class="title-container">
-            <div class="about-title" id="about">
-                About Me
-            </div>
-        </div>
-            <div class="description-container">
-            <div class="about-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Cras sollicitudin ex semper nunc vestibulum ullamcorper. 
-                Praesent laoreet in massa vitae scelerisque. Duis ullamcorper enim sed sagittis mollis. 
-                Integer eu augue augue. Vivamus blandit sit amet odio vel sollicitudin. Etiam eleifend 
-                elementum magna. Morbi vehicula sed felis quis semper. Aliquam in eros ac odio bibendum 
-                egestas ut quis mauris. Phasellus eget risus luctus, faucibus eros at, feugiat odio. 
-                Suspendisse potenti. Ut auctor, lectus nec sodales pretium, metus turpis pulvinar turpis, 
-                id lacinia dui est id neque. Pellentesque habitant morbi tristique senectus et netus et 
-            </div>
-        </div>
-        <div class="title-container">
-            <div class="education-title" id="education">
-                Education
-            </div>
-        </div>
-        <div class="educ-container">
-            <div class="section-container">
-            <!-- <div class="img-container"> -->
-                <img src="bruin logo.png" alt="ucla">
-                
-            <!-- </div> -->
-                <div class="desc-container">
-                    <h1>University of California, Los Angeles </h1>
-                    <h2>M.S. in Engineering with Specialization in Data Science - In Progress</h2>
-                    <h2>Blah Blah Blah</h2>
-                </div>
-            </div>
-        </div>
-        <!-- </div> -->
-        <div class="educ-container">
-            <!-- <div class="img-container"> -->
-            <div class="section-container">
-                <img src="anteater.png" alt="uci">
-            <!-- </div> -->
+    
+<div class="loader-wrapper" id="loader-wrapper">
+    <!-- <div class="scroll-wrapper"> -->
+        <div class="header-container">
+            <header class="main-head">
+                 
+                <!-- <img class="main-head-img" src="header_image.JPG" alt="Julia"> -->
+                    <div class="header-top-text">Hi, I'm</div>
+                    <div class="header-left-text">Julia</div>
+                    <div class="header-right-text">Lau</div>
 
-                <div class="desc-container">
-                    <h1>University of California, Irvine</h1>
-                    <h2>B.S. Computer Science - June, 2019</h2>
-                    <h2>Blah Blah Blah</h2>
-                </div>
-            </div>
-        </div>
-        <div class="title-container">
-            <div class="education-title" id="experience">
-                Experience
-            </div>
-        </div>
-        <div class="educ-container">
-            <div class="section-container">
-            <!-- <div class="img-container"> -->
-                <img src="raytheon.png" alt="raytheon">
-                
-            <!-- </div> -->
-                <div class="desc-container">
-                    <h1>Software Engineer I</h1>
-                    <h2>Raytheon Technologies</h2>
-                    <h2>Blah Blah Blah</h2>
-                </div>
-            </div>
-        </div>
-        <!-- </div> -->
-        <div class="educ-container">
-            <!-- <div class="img-container"> -->
-            <div class="section-container">
-                <img src="pharmedquest.png" alt="pharmedquest">
-            <!-- </div> -->
+                    <!-- Nav Bar Icon when max-width: 700px -->
+                    <!-- <div class="nav-responsive" id="top" >
+                        <a class="nav-icon" id="nav-open-btn" href="#nav"><i class="fa fa-bars">Book Navigation</i></a>
+                    </div> -->
 
-                <div class="desc-container">
-                    <h1>Finance (Data Analyst) Intern</h1>
-                    <h2>PharMedQuest</h2>
-                    <h2>Blah Blah Blah</h2>
-                </div>
-            </div>
+
+                    <!-- Nav Bar Container (Nested Grid) -->
+                    <div class="nav-container">
+                        <nav class="stroke" id="nav">
+                            <!-- <div class="block"> -->
+                            <ul>
+                                <li><a href="#about" class="navLinks">About</a></li>
+                                <li><a href="#education" class="navLinks">Education</a></li>
+                                <li><a href="#experience" class="navLinks">Experience</a></li>
+                                <li><a href="#contact" class="navLinks">Contact</a></li>
+                                <li><a href="javascript:void(0);" onclick="openNav()" class="nav-icon"><i class="fa fa-bars"></i></a></li>
+                                
+                            </ul>
+                            <!-- <a href="#top" class="close-btn" id="nav-close-btn">&times;</a> -->
+                            <!-- </div> -->
+                        </nav>
+                    </div>
+
+            </header>
         </div>
 
-            <!-- <div class="bruin-desc-container">
-                <h1>University of California, Los Angeles </h1>
-                <h2>M.S. in Engineering with Specialization in Data Science - In Progress</h2>
-                <h2>Blah Blah Blah</h2>
-            </div> -->
-        <!-- </div> -->
-        <!-- <div class="anteater-container"> -->
+        <div class="main-container">
             
-            <!-- <div class="anteater-desc-container">
-                <h1>University of California, Irvine</h1>
-                <h2>B.S. Computer Science - June, 2019</h2>
-                <h2>Blah Blah Blah</h2>
-            </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
+                <div class="title-container">
+                    <div class="education-title" id="about">
+                        About Me
+                    </div>
+                </div>
 
-            <!-- <div class="item2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Cras sollicitudin ex semper nunc vestibulum ullamcorper. 
-                    Praesent laoreet in massa vitae scelerisque. Duis ullamcorper enim sed sagittis mollis. 
-                    Integer eu augue augue. Vivamus blandit sit amet odio vel sollicitudin. Etiam eleifend 
-                    elementum magna. Morbi vehicula sed felis quis semper. Aliquam in eros ac odio bibendum 
-                    egestas ut quis mauris. Phasellus eget risus luctus, faucibus eros at, feugiat odio. 
-                    Suspendisse potenti. Ut auctor, lectus nec sodales pretium, metus turpis pulvinar turpis, 
-                    id lacinia dui est id neque. Pellentesque habitant morbi tristique senectus et netus et 
-                    malesuada fames ac turpis egestas. Integer id justo vel dui mattis tincidunt nec sed tellus. 
-                    Morbi blandit imperdiet mattis. Duis feugiat efficitur leo a luctus.
-
-        </div>
-        <div class="education-title">
-            Education
-        </div>
-        
-        <div class="item6">
-            <img class="item-img" src="bruin logo.png" alt="ucla">
-        </div>
-        <div class="item7">
-            <h1>University of California, Los Angeles </h1>
-            <h2>M.S. in Engineering with Specialization in Data Science - In Progress</h2>
-            <h2>Blah Blah Blah</h2>
-        </div>
-
-        <div class="item10">
-            <img class="item-img" src="anteater logo.png" alt="uci">
-        </div>
-        <div class="item11">
-            <h1>University of California, Irvine</h1>
-            <h2>B.S. Computer Science - June, 2019</h2>
-            <h2>Blah Blah Blah</h2>
-        </div> -->
-    <!-- </div> -->
-        <!-- <div class="item10">
-            <p>item10</p>
-        </div>
-        <div class="item11">
-            <p>item11</p>
-        </div> -->
-
-    </div>
-<!-- </div> -->
-
+                <div class="description-container">
+                        <div class="about-description">
+                            <b>Hey there!</b> I'm a full-time software engineer and part-time graduate student based in 
+                            Los Angeles, CA. I like writing software and building machine learning models - you can
+                            take a look at some of my projects here. When I'm not coding, I enjoy finding new eats in LA.
+                            <br><br>
+                            Here are my most frequently used technical skills:
+                            <br>
+                            
+                            <ul id="ul-type">
+                                <li>C/C++</li>
+                                <li>MATLAB</li>
+                                <li>Python</li>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+            
+                        </div>
+                </div>
+            
+                <div class="title-container">
+                    <div class="education-title" id="experience">
+                        Experience
+                    </div>
+                </div>
+                <div class="educ-container">
+                    <div class="section-container">
+                        <img src="raytheon.png" alt="raytheon">
+                        <div class="desc-container">
+                            <h1>Software Engineer I</h1>
+                            <h2>Raytheon Company</h2>
+                            <h2>August 2019 - Present</h2>
+                            <h3>At Raytheon, I write embedded programs for tactical combat radars.
+                                Using C, MATLAB, and assembly, I implement signal processing techniques and optimize
+                                code so the processing cores take as little time as possible. I collaborate with my
+                                team to deliver builds to our customers using agile software development.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
     
+                <div class="educ-container">
+                    <div class="section-container">
+                        <img src="pharmedquest.png" alt="pharmedquest">
+                        <div class="desc-container">
+                            <h1>Finance (Data Analyst) Intern</h1>
+                            <h2>PharMedQuest</h2>
+                            <h2>April 2018 - August 2018</h2>
+                            <h3>This internship was the first opportunity I had to apply my technical skills to 
+                                real-world and professional applications. My tasks included cleaning and manipulating
+                                large amounts of financial data using T-SQL as well as developing a web application
+                                for their clients. I gained valuable experience collaborating with other software engineers
+                                and communicating between different teams.
+                                
+                                <!-- I interned in the Finance department to develop an MVC web application, which served
+                                as an online portal for clients. My duties included fixing bugs, adding clients to the 
+                                portal, and updating client information regularly. I gained skills in HTML, CSS, 
+                                and JavaScript. During this internship, I also processed and cleaned out their financial 
+                                data. I wrote a stored procedure that generated the highest paying clients and produced
+                                accurate financial estimates for each payer. This automated a process that was originally
+                                manual, saving time and also labor to produce these results. -->
+                            </h3>
+                        </div>
+                    </div>
+                </div>
 
-    
+            <!-- <div class="color-container"> -->
+                <div class="title-container">
+                    <div class="education-title" id="education">
+                        Education
+                    </div>
+                </div>
+                <div class="educ-container">
+                    <div class="section-container">
+                        <img src="bruin logo.png" alt="ucla">
+                            <div class="desc-container">
+                                <h1>University of California, Los Angeles </h1>
+                                <h2>M.S. in Engineering with Specialization in Data Science - In Progress</h2>
+                                <h3>This past year, I began a Master's program at UCLA in Data Science Engineering.
+                                    Topics from this program I have special interests in include ... Specifically,
+                                    I am fascinated by ... My enrollment continues to further my passion for data science (?)
+                                </h3>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="educ-container">
+                    <div class="section-container">
+                        <img src="anteater.png" alt="uci">
+                        <div class="desc-container">
+                            <h1>University of California, Irvine</h1>
+                            <h2>B.S. Computer Science - June, 2019</h2>
+                            <h3>My passion for computer science began at UCI. From learning how to build a simple 
+                                game to coding an artificially intelligent agent, I honed a variety of technical
+                                skills here. My ambition, technical ability, and knowledge stemmed from the 
+                                academic resources provided at UCI.
+                                <br><br>
+                                Outside of academics, I was also involved in campus leadership as a Resident Advisor
+                                in the housing community. Here, I developed leadership skills and collaborated 
+                                with a passionate team to contribute to campus life. 
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+        <!-- </div> -->
+
+
+                <div class="title-container">
+                    <div class="education-title" id="contact">
+                        Get in Touch
+                    </div>
+                </div>
+                    <div class="description-container">
+                        <div class="about-description">
+                            
+                            <h2>Have any questions for me or want to get in touch? Send me an 
+                                email at julia800@gmail.com, or DM me through Twitter & LinkedIn and 
+                                I'll get back to you as soon as I can! In the meantime, you can check out 
+                                some of my work through my GitHub below.
+                            </h2>
+                            <div class="footer-icons">
+                                <a href="#" class="fa sc fa-linkedin"></a>
+                                <a href="#" class="fa sc fa-github" aria-hidden="true"></a>
+                                <a href="#" class="fa sc fa-twitter"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+</div>
+
 
 </body>
 </html>

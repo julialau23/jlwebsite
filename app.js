@@ -31,59 +31,26 @@ function openNav() {
     }
   }
 
+var myVar;
+
+function loadWrapper() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("preloader-wrapper").style.display = "none";
+    document.getElementById("loader-wrapper").style.display = "block";
+}
 
 
-// (function(window, document, undefined)
-// {
-
-//     window.App = (function()
-//     {
-
-//         var _init = false, app = { };
-
-//         app.init = function()
-//         {
-//             if (_init) {
-//                 return;
-//             }
-//             _init = true;
-
-//             var nav_open = false,
-//                 $main = $('.main-head');
-
-//             $('#nav-open-btn').on('click', function()
-//             {
-//                 if (!nav_open) {
-//                     $main.animate({ left: '70%' }, 500);
-//                     nav_open = true;
-//                     return false;
-//                 }
-//             });
-
-//             $('#nav-close-btn').on('click', function()
-//             {
-//                 if (nav_open) {
-//                     $main.animate({ left: '0' }, 500);
-//                     nav_open = false;
-//                     return false;
-//                 }
-//             });
-
-//             $(document.documentElement).addClass('js-ready');
-//         };
-
-//         return app;
-
-//     })();
-
-//     $.fn.ready(function()
-//     {
-//         window.App.init();
-//     });
-
-// })(window, window.document);
-
-
+$(window).on("load",function(){
+  
+  // $(".preloader-wrapper").fadeOut("slow");
+  // $(".loader-wrapper").fadeIn("slow");
+  /*<==================== UNCOMMENT LATER ==================================*/ 
+  $(".preloader-wrapper").delay(2000).fadeOut("slow");
+  $(".loader-wrapper").delay(1000).fadeIn("slow");
+});
 
 $(function(){  // $(document).ready shorthand
     $(".header-container").fadeIn('slow');
@@ -98,7 +65,7 @@ $(function(){  // $(document).ready shorthand
 
           $(".main-container").children().each( function(i){
             
-            var middle_of_object = $(this).position().top + $(this).outerHeight()/3;
+            var middle_of_object = $(this).position().top + $(this).outerHeight()/4;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             // console.log($(this).outerHeight());
             /* If the object is completely visible in the window, fade it in */
